@@ -53,6 +53,6 @@ select tb_personagem.nome, tb_personagem.habilidade, tb_personagem.poder_atq, tb
 -- os personagens que são arqueiros)
 select tb_personagem.nome, tb_personagem.defesa,tb_personagem.habilidade
 from tb_personagem right join tb_classe
-on tb_classe.id = tb_personagem.classe_id where tb_classe.id = "Saltos acrobaticos";
+on tb_classe.id = tb_personagem.classe_id where tb_classe.id = 2;
 
 
