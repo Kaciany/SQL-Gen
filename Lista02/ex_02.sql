@@ -1,7 +1,7 @@
 create database db_pizzaria_legal;
 use db_pizzaria_legal;
 
-create table tb_categoria (
+create table tb_tb_categoria (
 id bigint auto_increment,
 sabor varchar(15) not null,
 massa varchar(25) not null,
@@ -15,7 +15,7 @@ insert into tb_categoria(sabor,massa,preco) values ("Doce","Sem glúten",29.00);
 insert into tb_categoria(sabor,massa,preco) values ("Salgada","Tradicional",60.00);
 
 
-create table tb_pizza (
+create table tb_produto (
 id bigint auto_increment,
 recheio varchar(255) not null,
 qtd varchar(255) not null,
@@ -27,7 +27,7 @@ FOREIGN KEY (classe_id) REFERENCES tb_categoria (id)
 );
 
 
--- Popule esta tabela personagem com até 8 dados.
+
 insert into tb_pizza(recheio,qtd,tamanho,bordasAdc,classe_id) values ("KitKat",1,"Grande",false,1);
 insert into tb_pizza(recheio,qtd,tamanho,bordasAdc,classe_id) values ("Oreo",1,"Media",false,1);
 insert into tb_pizza(recheio,qtd,tamanho,bordasAdc,classe_id) values ("Meia\Meia",1,"Grande",true,2);
